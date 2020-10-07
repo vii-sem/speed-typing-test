@@ -1,4 +1,4 @@
-Project: Speed Typing Test
+# Project: Speed Typing Test
 
 Team Members:
 
