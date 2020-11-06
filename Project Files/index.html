@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+            //defining metadata of webpage
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      
+            //Linking external sheet – Font Awesome
+        <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+              integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+              crossorigin="anonymous"
+        />
+      
+            //linking CSS file
+        <link rel="stylesheet" href="style.css" />
+      
+        <title>Speed Typing Test</title>
+  </head>
+    
+    
+  <body>
+            //creating settings button
+        <button id="settings-btn" class="settings-btn">
+                <i class="fas fa-cog"></i>
+        </button>
+
+        <div id="settings" class="settings">
+              <form id="settings-form">
+                <div>
+                  <label for="difficulty">
+                            <b>Difficulty Level</b>
+                  </label>
+                  <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                </div>
+              </form>
+        </div>
+                //creating Show Rules button
+       <button id="rules-btn" class="btn rules-btn">Show Rules</button>
+    <div id="rules" class="rules">
+          <h2>How To Play:</h2>
+          <p>Click on the text-box, and start typing.</p>
+          <p>You can change the Difficulty Level to suit your typing speed. Each difficulty level has different time points with it.</p>    
+          <p>If the timer runs out, Game over and score is displayed</p>
+          <p>To play again, Click on Reload</p>
+          <p><h3>All The Best!!</h3></p>
+
+          <button id="close-btn" class="btn">Close</button>
+    </div>
+                //creating Text box area      
+        <div class="container">
+              <h2>👩‍💻 Speed Typing Test 👨‍💻</h2>
+              <small>Type the following:</small>
+
+              <h1 id="word"></h1>
+
+              <input 
+                type="text"
+                id="text"
+                autocomplete="off"
+                placeholder="Type the word here..."
+                autofocus
+              />
+
+              <p class="time-container">Time left: <span id="time">10s</span></p>
+
+              <p class="score-container">Score: <span id="score">0</span></p>
+
+              <div id="end-game-container" class="end-game-container"></div>
+        </div>
+
+                //linking JS file
+      <script src="script.js"></script>
+      <script src="./confetti.js"></script>
+
+
+  </body>
+</html>
